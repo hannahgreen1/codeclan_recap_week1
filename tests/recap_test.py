@@ -105,7 +105,7 @@ class TestRecap(unittest.TestCase):
         self.assertEqual(52, sum)
 
 
-    @unittest.skip("delete this line to run the test")
+    # @unittest.skip("delete this line to run the test")
     def test_list_of_student_names(self):
         students = get_student_names(self.cc_cohort)
         self.assertEqual(["Amy", "Dave", "James", "Mary"], students)
