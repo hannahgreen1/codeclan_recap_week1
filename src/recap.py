@@ -10,3 +10,8 @@ def get_student_names(cohort):
     for student in cohort["students"]:
             list_students.append(student["name"])
     return list_students 
+
+def get_favourite_langauge(instructors, name):
+    for instructor in instructors:
+        if instructor["name"] == name:
+            return instructor["favourite_langauges"]["2nd"]

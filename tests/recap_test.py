@@ -110,7 +110,7 @@ class TestRecap(unittest.TestCase):
         students = get_student_names(self.cc_cohort)
         self.assertEqual(["Amy", "Dave", "James", "Mary"], students)
 
-    @unittest.skip("delete this line to run the test")
+    # @unittest.skip("delete this line to run the test")
     def test_get_Colins_second_fav_language(self):
-        language = get_favourite_langauge(self.instructors)
+        language = get_favourite_langauge(self.instructors, "Colin")
         self.assertEqual("Spring", language)
